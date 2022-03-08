@@ -18,12 +18,15 @@ Movie Festival API
 
 ### 3.Database Connection:
 1. Create .env File on your project repository from .env.example
+2. Change the environment on .env into your local environment
+4. Run the apps
+5. The apps will create the database table itself
+6. Run sequelize db:seed:all to run seeder for generated genre information
 
 If you followed all this steps, you should be able use postman client to execute the API
 
 ### 4.Running the project
 1. Execute npm start or npm run dev
-2. Go to localhost:3000
 
 ### Commit Description:
 ```
