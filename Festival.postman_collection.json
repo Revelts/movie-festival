@@ -1,0 +1,3555 @@
+{
+	"info": {
+		"_postman_id": "7fccb842-d2ff-479c-b6ae-3c4fa6e0f80d",
+		"name": "Festival",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Movie",
+			"item": [
+				{
+					"name": "Add New Movie",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data; boundary=XXX",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Whoa Whoah",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Film Superman , Super hero kuat",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "60",
+									"type": "text"
+								},
+								{
+									"key": "artist[1][name]",
+									"value": "Cuang",
+									"type": "text"
+								},
+								{
+									"key": "artist[0][name]",
+									"value": "Cong",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/C:/Users/Revelt/Videos/boost.mp4"
+								},
+								{
+									"key": "genres[0][genre]",
+									"value": "Mci-Fi",
+									"type": "text"
+								},
+								{
+									"key": "genres[1][genre]",
+									"value": "Myth",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/insertmovie",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"insertmovie"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SUCCESS - Add New Video",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Superman (2002)",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Film Superman , Super hero kuat",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "60",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "genres[0][genre]",
+											"value": "Mci-Fi",
+											"type": "text"
+										},
+										{
+											"key": "genres[1][genre]",
+											"value": "Myth",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-IKOLPD/spoC3u/yhpbBOwDBeG6U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 19:33:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Superman (2002)\",\n    \"description\": \"Film Superman , Super hero kuat\",\n    \"duration\": 60,\n    \"url\": \"uploads\\\\video-1646681612671-223433242.mp4\",\n    \"createdAt\": \"2022-03-07T19:33:32.819Z\",\n    \"updatedAt\": \"2022-03-07T19:33:32.821Z\",\n    \"genre\": [\n        \"Mci-Fi\",\n        \"Myth\"\n    ],\n    \"artist\": [\n        \"Test Actor\",\n        \"Test Actor 2\"\n    ]\n}"
+						},
+						{
+							"name": "ERROR - Title Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-S6VhMMDoDzFELk9Cm+FrS9V52TU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:54:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Title to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Description Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-XO2lhek/HIGbOS6dIEB3gFH3fBw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:55:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Description to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Duration Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-oxkXCkx/0FuKKZCReku2LwObqJs\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Duration to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Genre Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-FeYHXebGRGRq1dOD5GOdHfe+Lpo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Genre to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR: - Artist Empty",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-pHX3vPvxe6U+PD+mSl3WAXXiUjw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill atleast 1 Artist to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Invalid Type of Video",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Music/buddry.png"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-VnlmOSFIrumETbUpl3mxI83gKq8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:58:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid File Type, you only able to upload mp4, webm, ogg\"\n}"
+						},
+						{
+							"name": "ERROR - Invalid File Type",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Superman (2002)",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Film Superman , Super hero kuat",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "60",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Mcfi-Fi",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Pictures/03.png"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 19:13:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Error</title>\n    </head>\n    <body>\n        <pre>Invalid File Type, you only able to upload mp4, webm, ogg</pre>\n    </body>\n</html>"
+						}
+					]
+				},
+				{
+					"name": "Get Statistics",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/mostviewed/movies",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"mostviewed",
+								"movies"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SUCCESS - Most View Genres",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/mostviewed/genres",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"mostviewed",
+										"genres"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "373"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"175-MqNWcyFioG591uCpSfcIS3s3rJ0\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 21:39:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mostViewGenres\": [\n        {\n            \"genreName\": \"Comedy\",\n            \"viewed\": 10\n        },\n        {\n            \"genreName\": \"Animated\",\n            \"viewed\": 5\n        },\n        {\n            \"genreName\": \"Biography\",\n            \"viewed\": 5\n        },\n        {\n            \"genreName\": \"Adventure\",\n            \"viewed\": 2\n        },\n        {\n            \"genreName\": \"Action\",\n            \"viewed\": 1\n        },\n        {\n            \"genreName\": \"Crime\",\n            \"viewed\": 0\n        },\n        {\n            \"genreName\": \"Dance\",\n            \"viewed\": 0\n        },\n        {\n            \"genreName\": \"Disaster\",\n            \"viewed\": 0\n        },\n        {\n            \"genreName\": \"Documentary\",\n            \"viewed\": 0\n        },\n        {\n            \"genreName\": \"Drama\",\n            \"viewed\": 0\n        }\n    ]\n}"
+						},
+						{
+							"name": "SUCCESS - Most View Movies",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/mostviewed/movies",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"mostviewed",
+										"movies"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "251"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fb-WaBJT6dfzva/WzzLol/RkkQs38Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 21:45:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"mostViewMovies\": [\n        {\n            \"movieName\": \"Superman (2020)\",\n            \"duration\": 60,\n            \"viewed\": 50\n        },\n        {\n            \"movieName\": \"Superman (2010)\",\n            \"duration\": 60,\n            \"viewed\": 35\n        },\n        {\n            \"movieName\": \"Superman (2005)\",\n            \"duration\": 60,\n            \"viewed\": 10\n        },\n        {\n            \"movieName\": \"Superman (2002)\",\n            \"duration\": 60,\n            \"viewed\": 5\n        }\n    ]\n}"
+						},
+						{
+							"name": "ERROR - Invalid Parameter",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/mostviewed/adsd",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"mostviewed",
+										"adsd"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-q+rInhbh9ZU3cyd1WaT7JjB31ZE\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 21:42:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid most view parameter (movies or genres)\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Get Movie",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/getmovie?page=0&pageSize=2&search=Superman",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"getmovie"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								},
+								{
+									"key": "search",
+									"value": "Superman"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SUCCESS - List Of Movie",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/getmovie?page=0&pageSize=2&search=",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"getmovie"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "pageSize",
+											"value": "2"
+										},
+										{
+											"key": "search",
+											"value": ""
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "795"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31b-vBIV2t6l3fctCZJmstbpdkFQYyw\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 10:51:10 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"totalItems\": 28,\n        \"movieList\": [\n            {\n                \"id\": 1,\n                \"title\": \"Hamina Hamina\",\n                \"description\": \"Hue Hue\",\n                \"duration\": 0,\n                \"url\": \"uploads\\\\video-1646735361816-368939153.mp4\",\n                \"viewed\": 5,\n                \"createdAt\": \"2022-03-07T21:40:50.000Z\",\n                \"updatedAt\": \"2022-03-08T10:29:22.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Horror\"\n                    },\n                    {\n                        \"genre\": \"MciFi\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Revelt Dong\"\n                    },\n                    {\n                        \"artistName\": \"Yoeda\"\n                    }\n                ]\n            },\n            {\n                \"id\": 2,\n                \"title\": \"Superman (2005)\",\n                \"description\": \"Film Superman , Super hero kuat\",\n                \"duration\": 60,\n                \"url\": \"uploads\\\\video-1646689259968-774263984.mp4\",\n                \"viewed\": 10,\n                \"createdAt\": \"2022-03-07T21:41:00.000Z\",\n                \"updatedAt\": \"2022-03-07T21:41:00.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Mci-Fi\"\n                    },\n                    {\n                        \"genre\": \"Myth\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Test Actor\"\n                    },\n                    {\n                        \"artistName\": \"Test Actor 2\"\n                    }\n                ]\n            }\n        ],\n        \"totalPages\": 14,\n        \"currentPage\": 0\n    }\n}"
+						},
+						{
+							"name": "SUCCESS - List Of Movie + Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/getmovie?page=0&pageSize=2&search=Superman",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"getmovie"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "0"
+										},
+										{
+											"key": "pageSize",
+											"value": "2"
+										},
+										{
+											"key": "search",
+											"value": "Superman"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "828"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"33c-V9I5GWEJ9ykKrXCt1ksedkL74OA\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 10:51:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"totalItems\": 20,\n        \"movieList\": [\n            {\n                \"id\": 2,\n                \"title\": \"Superman (2005)\",\n                \"description\": \"Film Superman , Super hero kuat\",\n                \"duration\": 60,\n                \"url\": \"uploads\\\\video-1646689259968-774263984.mp4\",\n                \"viewed\": 10,\n                \"createdAt\": \"2022-03-07T21:41:00.000Z\",\n                \"updatedAt\": \"2022-03-07T21:41:00.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Mci-Fi\"\n                    },\n                    {\n                        \"genre\": \"Myth\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Test Actor\"\n                    },\n                    {\n                        \"artistName\": \"Test Actor 2\"\n                    }\n                ]\n            },\n            {\n                \"id\": 4,\n                \"title\": \"Superman (2020)\",\n                \"description\": \"Film Superman , Super hero kuat\",\n                \"duration\": 60,\n                \"url\": \"uploads\\\\video-1646689262656-741988587.mp4\",\n                \"viewed\": 50,\n                \"createdAt\": \"2022-03-07T21:41:02.000Z\",\n                \"updatedAt\": \"2022-03-07T21:41:02.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Mci-Fi\"\n                    },\n                    {\n                        \"genre\": \"Myth\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Test Actor\"\n                    },\n                    {\n                        \"artistName\": \"Test Actor 2\"\n                    }\n                ]\n            }\n        ],\n        \"totalPages\": 10,\n        \"currentPage\": 0\n    }\n}"
+						},
+						{
+							"name": "SUCCESS - Pagination List Of Movie",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:3000/api/getmovie?page=1&pageSize=2&search=Superman",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"getmovie"
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "2"
+										},
+										{
+											"key": "search",
+											"value": "Superman"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "816"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"330-NvaVcpn76/XUtqV1HYI48Qbxk4Y\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 10:52:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": {\n        \"totalItems\": 20,\n        \"movieList\": [\n            {\n                \"id\": 5,\n                \"title\": \"Jurassic Park(2002)\",\n                \"description\": \"Film Superman , Super hero kuat\",\n                \"duration\": 60,\n                \"url\": \"uploads\\\\video-1646718978027-982932694.mp4\",\n                \"viewed\": 0,\n                \"createdAt\": \"2022-03-08T05:56:18.000Z\",\n                \"updatedAt\": \"2022-03-08T05:56:18.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Mci-Fi\"\n                    },\n                    {\n                        \"genre\": \"Myth\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Test Actor\"\n                    },\n                    {\n                        \"artistName\": \"Test Actor 2\"\n                    }\n                ]\n            },\n            {\n                \"id\": 6,\n                \"title\": \"Big Bang 2002)\",\n                \"description\": \"Film Superman , Super hero kuat\",\n                \"duration\": 60,\n                \"url\": \"uploads\\\\video-1646719000349-917208365.mp4\",\n                \"viewed\": 0,\n                \"createdAt\": \"2022-03-08T05:56:40.000Z\",\n                \"updatedAt\": \"2022-03-08T05:56:40.000Z\",\n                \"deletedAt\": null,\n                \"genreList\": [\n                    {\n                        \"genre\": \"Mci-Fi\"\n                    },\n                    {\n                        \"genre\": \"Myth\"\n                    }\n                ],\n                \"artistList\": [\n                    {\n                        \"artistName\": \"Cong\"\n                    },\n                    {\n                        \"artistName\": \"Cuang\"\n                    }\n                ]\n            }\n        ],\n        \"totalPages\": 10,\n        \"currentPage\": 1\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Update Movie",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "multipart/form-data; boundary=XXX",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Apasih",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Hue Hue",
+									"type": "text"
+								},
+								{
+									"key": "duration",
+									"value": "0",
+									"type": "text"
+								},
+								{
+									"key": "artist[0][name]",
+									"value": "Revelt Dong",
+									"type": "text"
+								},
+								{
+									"key": "video",
+									"type": "file",
+									"src": "/C:/Users/Revelt/Videos/boost.mp4"
+								},
+								{
+									"key": "artist[1][name]",
+									"value": "Yoeda",
+									"type": "text"
+								},
+								{
+									"key": "genres[0][genre]",
+									"value": "Horror",
+									"type": "text"
+								},
+								{
+									"key": "genres[1][genre]",
+									"value": "MciFi",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:3000/api/updatemovie/3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"updatemovie",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SUCCESS - Update Video",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Superman (2002)",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Film Superman , Super hero kuat",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "60",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "genres[0][genre]",
+											"value": "Mci-Fi",
+											"type": "text"
+										},
+										{
+											"key": "genres[1][genre]",
+											"value": "Myth",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "290"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"122-IKOLPD/spoC3u/yhpbBOwDBeG6U\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 19:33:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"title\": \"Superman (2002)\",\n    \"description\": \"Film Superman , Super hero kuat\",\n    \"duration\": 60,\n    \"url\": \"uploads\\\\video-1646681612671-223433242.mp4\",\n    \"createdAt\": \"2022-03-07T19:33:32.819Z\",\n    \"updatedAt\": \"2022-03-07T19:33:32.821Z\",\n    \"genre\": [\n        \"Mci-Fi\",\n        \"Myth\"\n    ],\n    \"artist\": [\n        \"Test Actor\",\n        \"Test Actor 2\"\n    ]\n}"
+						},
+						{
+							"name": "ERROR - Title Empty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-S6VhMMDoDzFELk9Cm+FrS9V52TU\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:54:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Title to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Description Empty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-XO2lhek/HIGbOS6dIEB3gFH3fBw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:55:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Description to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Duration Empty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "55"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"37-oxkXCkx/0FuKKZCReku2LwObqJs\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Duration to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Genre Empty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"34-FeYHXebGRGRq1dOD5GOdHfe+Lpo\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill Genre to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR: - Artist Empty",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Videos/boost.mp4"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "63"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3f-pHX3vPvxe6U+PD+mSl3WAXXiUjw\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:56:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"You must fill atleast 1 Artist to insert new movie!\"\n}"
+						},
+						{
+							"name": "ERROR - Invalid Type of Video",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Test Title",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Test Description",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "Test Duration",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Test Genre",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Music/buddry.png"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "69"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"45-VnlmOSFIrumETbUpl3mxI83gKq8\""
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 17:58:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid File Type, you only able to upload mp4, webm, ogg\"\n}"
+						},
+						{
+							"name": "ERROR - Invalid File Type",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "multipart/form-data; boundary=XXX",
+										"type": "text",
+										"disabled": true
+									},
+									{
+										"key": "",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Superman (2002)",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Film Superman , Super hero kuat",
+											"type": "text"
+										},
+										{
+											"key": "duration",
+											"value": "60",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "Mcfi-Fi",
+											"type": "text"
+										},
+										{
+											"key": "artist[0][name]",
+											"value": "Test Actor",
+											"type": "text"
+										},
+										{
+											"key": "artist[1][name]",
+											"value": "Test Actor 2",
+											"type": "text"
+										},
+										{
+											"key": "video",
+											"type": "file",
+											"src": "/C:/Users/Revelt/Pictures/03.png"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/insertmovie",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"insertmovie"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'none'"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "184"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 07 Mar 2022 19:13:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "<!DOCTYPE html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>Error</title>\n    </head>\n    <body>\n        <pre>Invalid File Type, you only able to upload mp4, webm, ogg</pre>\n    </body>\n</html>"
+						}
+					]
+				},
+				{
+					"name": "Update Statistics",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\":\"movies\",\r\n    \"movieId\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/updatestatistics",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"updatestatistics"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ERROR - Invalid Genre Name",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\":\"genres\",\r\n    \"movieId\": 1,\r\n    \"genreName\": \"Crimess\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/updatestatistics",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"updatestatistics"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-bRW99qeohIWCkJ/BgjmE8SVpnsU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 14:25:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Genre Not found in database!\"\n}"
+						},
+						{
+							"name": "ERROR - Movie not found in database",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\":\"movies\",\r\n    \"movieId\": 0\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/updatestatistics",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"updatestatistics"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "40"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"28-w+/4XDU8MAjgSl3x4Co/RklnXMU\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 14:27:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Movie not found in database!\"\n}"
+						},
+						{
+							"name": "SUCCESS - Update Genre View Statistic",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\":\"genres\",\r\n    \"movieId\": 1,\r\n    \"genreName\": \"Crime\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/updatestatistics",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"updatestatistics"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-czeRyz9/H81IUwoMBl7W35OMfpY\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 14:25:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"currentGenreStatistics\": {\n        \"genreName\": \"Crime\",\n        \"viewed\": 4,\n        \"updatedAt\": \"2022-03-08T14:25:58.492Z\"\n    }\n}"
+						},
+						{
+							"name": "SUCCESS - Update Movies View Statistics",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"type\":\"movies\",\r\n    \"movieId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/updatestatistics",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"updatestatistics"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "126"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7e-fewF/FAGjVeMSXOK/SXh+k2YE+I\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 14:26:26 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"currentMovieStatistic\": {\n        \"title\": \"Hamina Hamina\",\n        \"description\": \"Hue Hue\",\n        \"viewed\": 21,\n        \"updatedAt\": \"2022-03-08T14:26:26.201Z\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Register Account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"email\": \"yosep233@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/account/register",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"account",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "SUCCESS - Register New Account",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"email\": \"yosep233@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "256"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"100-whS3gV2X0ab6FJzAuk+PECCwBWI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:05:18 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Account Success Created\",\n    \"data\": {\n        \"createdAt\": \"2022-03-08T15:05:18.008Z\",\n        \"updatedAt\": \"2022-03-08T15:05:18.014Z\",\n        \"id\": 1,\n        \"username\": \"leynardo\",\n        \"email\": \"yosep233@gmail.com\",\n        \"password\": \"$2a$12$jn8RxsOlditqVA9/T9tJ/uuRg72fAMtbQcKvszEngb3w3P20wlmj6\"\n    }\n}"
+						},
+						{
+							"name": "ERROR - Account already exists",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"email\": \"yosep233@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "66"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"42-5NApsXhtjawmPpvC9Mw2X7e6934\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:07:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Account already exists\",\n    \"errMessage\": \"Validation error\"\n}"
+						},
+						{
+							"name": "ERROR - Empty Username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"yosep233@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-F4LfZkkocJitq+9XFMbZjixibSI\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:07:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Username must not empty\"\n}"
+						},
+						{
+							"name": "ERROR - Empty Email",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20-C7VteeV4AEIaEedKu9hP1XjYyHc\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:07:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Email must not empty\"\n}"
+						},
+						{
+							"name": "ERROR - Empty Password",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"email\": \"yosep233@gmail.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/register",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"register"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "35"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23-/RQpOdLtMalT0ULSF10/xuatiUk\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:08:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Password must not empty\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Login Account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:3000/api/account/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"account",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "ERROR - Login Failed",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "62"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3e-h3posnK/4xudipW29VGU2H7j0PQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:16:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Invalid account name, please use email or username\"\n}"
+						},
+						{
+							"name": "SUCCESS - Login Success With Email",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"email\": \"yosep233@gmail.com\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-Dew8nMZfoX3QEfXVcGa9ltlFev4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:16:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success Login into web movie\"\n}"
+						},
+						{
+							"name": "SUCCESS - Login Success With Username",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "x-api-key",
+										"value": "LmUuKAfzmRMEgPodYenz18TalYqkarlHJthH2UR2BU0xtsLULlgSe46wdF1hNU0I",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"leynardo\",\r\n    \"password\": \"test123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:3000/api/account/login",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"account",
+										"login"
+									]
+								}
+							},
+							"status": "Accepted",
+							"code": 202,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2a-Dew8nMZfoX3QEfXVcGa9ltlFev4\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 08 Mar 2022 15:16:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Success Login into web movie\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
