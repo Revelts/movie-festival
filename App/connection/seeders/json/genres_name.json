@@ -1,0 +1,242 @@
+[
+    {
+        "genreName": "Action",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Adventure",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Animated",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Biography",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Comedy",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Crime",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Dance",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Disaster",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Documentary",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Drama",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Erotic",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Family",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Fantasy",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Found Footage",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Historical",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Horror",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Independent",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Legal",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Live Action",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Martial Arts",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Musical",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Mystery",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Noir",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Performance",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Political",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Romance",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Satire",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Science Fiction",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Short",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Silent",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Slasher",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Sports",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Spy",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Superhero",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Supernatural",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Suspense",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Teen",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Thriller",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "War",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    },
+    {
+        "genreName": "Western",
+        "viewed": 0,
+        "createdAt" : "2022-03-09 06:27:46.0",
+		"updatedAt" : "2022-03-09 06:27:46.0"
+    }
+]
